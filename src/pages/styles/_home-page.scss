@@ -1,4 +1,4 @@
-.home-page-container {
+.home-page {
   display: flex;
   width: 100vw;
 }
@@ -6,6 +6,8 @@
 .box {
   flex: 1;
   height: 100vh;
+  display: flex;
+  flex-direction: row;
 }
 
 .box:first-child {
@@ -13,12 +15,26 @@
 }
 
 .profile-container {
+  margin: 0 80px;
   display: flex;
+  align-items: center; /* Centers vertically */
+  justify-content: center; /* Centers horizontally */
+  height: 100vh; /* Full viewport height (or adjust as needed) */
   flex-direction: column;
   color: white;
-  align-items: center;
 }
 
+.profile-container > div {
+  width: 100%;
+}
 .profile-container > div:first-child {
+  font-size: $font-size-24;
   text-align: left;
+}
+
+.content-container {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }

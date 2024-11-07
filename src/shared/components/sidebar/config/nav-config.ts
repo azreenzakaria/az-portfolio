@@ -1,17 +1,17 @@
 export const navigationItems = [
   {
-    title: "INTRODUCTION",
-    path: "/",
+    title: "ABOUT",
+    path: "/about",
     icon: "",
   },
   {
     title: "EXPIRIENCES",
-    path: "/",
+    path: "/experience",
     icon: "",
   },
   {
     title: "PROJECTS",
-    path: "/",
+    path: "/project",
     icon: "",
   },
 ];
