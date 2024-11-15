@@ -1,4 +1,6 @@
-import Card from "../shared/components/card/card";
+import ExpCard from "../shared/components/card/exp-card";
+import IconCard from "../shared/components/card/icon-card";
+import ProjectCard from "../shared/components/card/project-card";
 import SideBar from "../shared/components/sidebar/sidebar";
 
 const HomePage = () => {
@@ -6,18 +8,20 @@ const HomePage = () => {
     <div className="home-page">
       <div className="box">
         <div className="profile-container">
-          <div>Nothing Here</div>
-          <div>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.
+          <div className="name">Your Name</div>
+          <div className="position">FullStack Developer</div>
+          <div className="intro">
+            I built projects for fun, blending modern, minimalistic design with
+            classic elegance.
           </div>
+          <IconCard></IconCard>
         </div>
       </div>
       <div className="box">
         <SideBar></SideBar>
         <div className="content-container">
-          <Card></Card>
+          {/* <ExpCard></ExpCard> */}
+          <ProjectCard></ProjectCard>
         </div>
       </div>
     </div>

@@ -28,7 +28,7 @@ const CardProps = ({
   );
 };
 
-const Card = () => {
+const ExpCard = () => {
   return (
     <div>
       {experiencesItem.map((item, index) => (
@@ -44,4 +44,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default ExpCard;
