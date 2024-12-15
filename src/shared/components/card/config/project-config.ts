@@ -1,12 +1,12 @@
 export const projectItems = [
   {
-    name: "ToDo",
+    name: "Todo Application API",
     descrition:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "This Todo Application (API) project, built with TypeScript, NestJS, GraphQL, and MySQL, exemplifies core principles of CRUD operations and effectively implements a one-to-many relationship.",
   },
   {
-    name: "Recipe",
+    name: "Recipe Application API",
     descrition:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "This Recipe Application (API) project, developed with TypeScript, NestJS, and MongoDB, showcases the fundamental principles of CRUD operations and demonstrates the implementation of a one-to-many relationship..",
   },
 ];

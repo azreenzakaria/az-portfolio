@@ -37,6 +37,7 @@ const ExpCard = () => {
           year={item.year}
           position={item.position}
           company={item.company}
+          // Turn description into a bullet point
           description={item.description}
         />
       ))}

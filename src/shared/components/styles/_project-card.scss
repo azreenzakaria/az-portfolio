@@ -13,14 +13,19 @@
   .img-container {
     flex-basis: 40%;
     border-right: 0.15rem solid black;
+    background-image: url(../../../assets/icons/checklist.png);
   }
 
   .desc-container {
     flex-grow: 1;
-    padding-left: 20px;
+    // padding-left: 20px;
 
     .detail:first-child {
       margin-bottom: 10px;
+    }
+
+    .detail:nth-child(2) {
+      text-align: justify;
     }
   }
 }

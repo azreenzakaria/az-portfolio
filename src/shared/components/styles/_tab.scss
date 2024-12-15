@@ -1,0 +1,40 @@
+.tab {
+  display: flex;
+  flex-direction: row;
+
+  .tab-container {
+    height: 100%;
+    width: 4vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    li {
+      flex: 1;
+      list-style-type: none;
+      writing-mode: vertical-lr;
+      text-orientation: upright;
+      color: black;
+      border: 0.125em solid #1a1a1a;
+
+      button {
+        all: unset;
+        width: 100%;
+        height: 100%;
+
+        &:hover {
+          background: $primary-gray;
+        }
+
+        &.active {
+          background: $secondary-green;
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    width: 90%;
+  }
+}

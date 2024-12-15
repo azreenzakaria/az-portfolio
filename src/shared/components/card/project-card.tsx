@@ -9,8 +9,7 @@ const Props = ({ name, description }: IProject) => {
   return (
     <div className="project-card">
       <div className="container">
-        <div className="img-container">IMAGE</div>
-
+        <div className="img-container"></div>
         <div className="desc-container">
           <div className="detail">{name}</div>
           <div className="detail">{description}</div>

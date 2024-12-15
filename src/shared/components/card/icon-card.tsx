@@ -4,10 +4,16 @@ import { ReactComponent as LinkedInLogo } from "../../../assets/icons/linkedin-l
 const IconCard = () => {
   return (
     <div className="icon-card">
-      <a href="#" className="social-container first-icon">
+      <a
+        href="https://www.linkedin.com/in/azreen-zakaria/"
+        className="social-container first-icon"
+      >
         <LinkedInLogo></LinkedInLogo>
       </a>
-      <a href="#" className="social-container second-icon">
+      <a
+        href="https://github.com/azreenzakaria"
+        className="social-container second-icon"
+      >
         <GitLogo></GitLogo>
       </a>
     </div>
