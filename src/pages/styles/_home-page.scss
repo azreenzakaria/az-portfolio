@@ -1,47 +1,66 @@
 .home-page {
-  display: flex;
   width: 100vw;
-}
-
-.box {
-  flex: 1;
-  height: 100vh;
   display: flex;
   flex-direction: row;
-}
 
-.box:first-child {
-  background-color: $bg-black;
-}
-
-.profile-container {
-  margin: 0 80px;
-  display: flex;
-  align-items: center; /* Centers vertically */
-  justify-content: center; /* Centers horizontally */
-  height: 100vh; /* Full viewport height (or adjust as needed) */
-  flex-direction: column;
-  color: white;
-
-  .name {
-    font-size: $font-size-24;
-    margin-bottom: 1rem;
+  .box {
+    flex: 1;
+    height: 100vh;
+    background-color: $bg-black;
   }
 
-  .position {
-    font-size: $font-size-16;
-    margin-bottom: 0.5rem;
+  .profile-container {
+    margin: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    color: white;
+
+    .greet {
+      font-size: $font-size-20;
+      font-weight: $font-weight-500;
+    }
+
+    .name {
+      font-size: $font-size-24;
+      font-weight: $font-weight-700;
+    }
+
+    .position {
+      font-size: $font-size-14;
+      font-weight: $font-weight-300;
+    }
   }
 
-  .intro {
-    font-size: $font-size-12;
+  .profile-container > div {
+    width: 100%;
+  }
+
+  .content-container {
+    margin: auto;
   }
 }
 
-.profile-container > div {
-  width: 100%;
-}
+// Responsive styles
+@media (max-width: 768px) {
+  .home-page {
+    flex-direction: column;
 
-.content-container {
-  margin: auto;
+    .profile-container {
+      .greet {
+        font-size: $font-size-18; // Adjust font sizes for smaller screens
+      }
+
+      .name {
+        font-size: $font-size-24;
+      }
+
+      .position {
+        margin-top: 0.15rem;
+        font-size: $font-size-14;
+      }
+    }
+  }
 }

@@ -9,7 +9,7 @@ const Tab = () => {
   return (
     <div className="tab">
       {/* Tab */}
-      <ul className="tab-container">
+      <ul>
         {TabRoutes.map((each) => (
           <li>
             <button

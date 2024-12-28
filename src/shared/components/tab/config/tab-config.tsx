@@ -10,7 +10,18 @@ interface IRoute {
 
 export const TabRoutes: IRoute[] = [
   {
-    element: <div>About Component</div>,
+    element: (
+      <div>
+        Hi, I’m [Your Name], a Software Engineer with nearly two years of
+        experience building and optimizing digital solutions. I’m a
+        detail-oriented problem solver who loves diving into the fine points to
+        deliver clean, efficient, and impactful code. When I’m not coding, I
+        enjoy having fun and taking time to chill, finding balance between work
+        and life. Whether it's collaborating on a team project or refining a
+        solo task, I always aim to bring enthusiasm and precision to everything
+        I do
+      </div>
+    ),
     title: "ABOUT",
     path: "/",
   },

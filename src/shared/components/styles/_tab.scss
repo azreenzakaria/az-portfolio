@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: row;
 
-  .tab-container {
-    height: 100%;
-    width: 4vh;
+  ul {
     margin: 0;
     padding: 0;
+    height: 100vh;
+    width: 4vh;
     display: flex;
     flex-direction: column;
 
