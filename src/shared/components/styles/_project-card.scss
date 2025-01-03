@@ -1,6 +1,8 @@
 .project-card {
+  margin: 50% 1rem;
   .container {
-    margin-top: 2.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
     display: flex;
     flex-direction: row;
     .left {
@@ -18,7 +20,7 @@
       }
     }
     .right {
-      flex-grow: 1;
+      flex: 1;
       padding-left: 1.35rem;
       .detail:first-child {
         margin-bottom: 10px;
@@ -30,6 +32,7 @@
 // Responsive styles
 @media (max-width: 768px) {
   .project-card {
+    margin: 0;
     font-size: $font-size-12;
     .container {
       margin-left: 3rem;

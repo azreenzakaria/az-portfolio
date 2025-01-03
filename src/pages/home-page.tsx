@@ -1,14 +1,11 @@
-import ExpCard from "../shared/components/card/exp-card";
 import IconCard from "../shared/components/card/icon-card";
-import ProjectCard from "../shared/components/card/project-card";
 import Tab from "../shared/components/tab/tab";
 import UseDeviceDetection from "../shared/hooks/use-device-type";
 
 const HomePage = () => {
   const deviceType = UseDeviceDetection();
-
-  // Handle the sidebar
-  const Sidebar = deviceType === "Desktop" ? <Tab /> : null;
+  const desktop = deviceType === "Desktop";
+  console.log("desktop");
 
   return (
     <div className="home-page">
@@ -21,11 +18,7 @@ const HomePage = () => {
         </div>
       </div>
       <div className="box">
-        {/* {Sidebar} */}
-        <div className="exp-title">Experiences</div>
-        <ExpCard />
-        <div className="project-title">Projects</div>
-        <ProjectCard />
+        <Tab showTab={desktop} />
       </div>
     </div>
   );

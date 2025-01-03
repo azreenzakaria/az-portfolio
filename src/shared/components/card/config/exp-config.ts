@@ -12,7 +12,7 @@ export const experiencesItem = [
     position: "Technical Analyst Intern",
     company: "Setel Venture Sdn. Bhd",
     description:
-      "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups",
+      "This Recipe Application (API) project, developed with TypeScript, NestJS, and MongoDB, showcases the fundamental principles of CRUD operations and demonstrates the implementation of a one-to-many relationship..",
     skills: ["MongoDb", "Swagger"],
   },
 ];

@@ -12,7 +12,7 @@ export const TabRoutes: IRoute[] = [
   {
     element: <ExpCard />,
     title: "EXPERIENCES",
-    path: "/experiences",
+    path: "/",
   },
   {
     element: <ProjectCard />,
