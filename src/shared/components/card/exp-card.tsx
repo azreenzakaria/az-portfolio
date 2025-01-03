@@ -1,3 +1,4 @@
+import Pill from "../pill/pill";
 import { experiencesItem } from "./config/exp-config";
 
 interface ExperienceItem {
@@ -5,6 +6,7 @@ interface ExperienceItem {
   position: string;
   company: string;
   description: string;
+  skills: string[];
 }
 
 const CardProps = ({
@@ -12,17 +14,16 @@ const CardProps = ({
   position,
   company,
   description,
+  skills,
 }: ExperienceItem) => {
   return (
-    <div className="card">
-      <div className="container">
-        <div className="left">{year}</div>
-        <div className="right">
-          <div className="content">
-            {position} - {company}
-          </div>
-          <div className="content">{description}</div>
-        </div>
+    <div className="container">
+      <div className="left">{year}</div>
+      <div className="right">
+        <div className="content">{position}</div>
+        <div className="content">{company}</div>
+        <div className="content">{description}</div>
+        <Pill items={skills} />
       </div>
     </div>
   );
@@ -30,15 +31,15 @@ const CardProps = ({
 
 const ExpCard = () => {
   return (
-    <div>
+    <div className="exp-card">
       {experiencesItem.map((item, index) => (
         <CardProps
           key={index}
           year={item.year}
           position={item.position}
           company={item.company}
-          // Turn description into a bullet point
           description={item.description}
+          skills={item.skills}
         />
       ))}
     </div>

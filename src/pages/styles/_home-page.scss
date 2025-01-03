@@ -2,44 +2,34 @@
   width: 100vw;
   display: flex;
   flex-direction: row;
-
+  color: $secondary-white;
   .box {
     flex: 1;
     height: 100vh;
-    background-color: $bg-black;
-  }
-
-  .profile-container {
-    margin: 0 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    flex-direction: column;
-    color: white;
-
-    .greet {
-      font-size: $font-size-20;
-      font-weight: $font-weight-500;
+    background-color: $primary-black;
+    .profile-container {
+      margin: 0 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column;
+      .greet {
+        font-size: $font-size-20;
+        font-weight: $font-weight-500;
+      }
+      .name {
+        font-size: $font-size-24;
+        font-weight: $font-weight-700;
+      }
+      .position {
+        font-size: $font-size-14;
+        font-weight: $font-weight-300;
+      }
+      div {
+        width: 100%;
+      }
     }
-
-    .name {
-      font-size: $font-size-24;
-      font-weight: $font-weight-700;
-    }
-
-    .position {
-      font-size: $font-size-14;
-      font-weight: $font-weight-300;
-    }
-  }
-
-  .profile-container > div {
-    width: 100%;
-  }
-
-  .content-container {
-    margin: auto;
   }
 }
 
@@ -47,19 +37,29 @@
 @media (max-width: 768px) {
   .home-page {
     flex-direction: column;
-
-    .profile-container {
-      .greet {
-        font-size: $font-size-18; // Adjust font sizes for smaller screens
+    overflow: auto;
+    .box:first-child {
+      height: 100vh;
+    }
+    .box {
+      .profile-container {
+        .greet {
+          font-size: $font-size-18; // Adjust font sizes for smaller screens
+        }
+        .name {
+          font-size: $font-size-24;
+        }
+        .position {
+          margin-top: 0.15rem;
+          font-size: $font-size-14;
+        }
       }
-
-      .name {
+      .exp-title,
+      .project-title {
+        margin-top: 1.875rem;
+        margin-left: 3rem;
         font-size: $font-size-24;
-      }
-
-      .position {
-        margin-top: 0.15rem;
-        font-size: $font-size-14;
+        font-weight: $font-weight-700;
       }
     }
   }

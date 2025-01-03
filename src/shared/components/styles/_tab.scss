@@ -24,11 +24,11 @@
         height: 100%;
 
         &:hover {
-          background: $primary-gray;
+          background: $primary-black;
         }
 
         &.active {
-          background: $secondary-green;
+          background: $secondary-white;
         }
       }
     }
