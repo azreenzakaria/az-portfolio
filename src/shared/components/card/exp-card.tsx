@@ -5,6 +5,7 @@ interface ExperienceItem {
   year: string;
   position: string;
   company: string;
+  url: string;
   description: string;
   skills: string[];
 }
@@ -13,6 +14,7 @@ const CardProps = ({
   year,
   position,
   company,
+  url,
   description,
   skills,
 }: ExperienceItem) => {
@@ -21,7 +23,11 @@ const CardProps = ({
       <div className="left">{year}</div>
       <div className="right">
         <div className="content">{position}</div>
-        <div className="content">{company}</div>
+        <div className="content">
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            {company}
+          </a>
+        </div>
         <div className="content">{description}</div>
         <Pill items={skills} />
       </div>
@@ -38,6 +44,7 @@ const ExpCard = () => {
           year={item.year}
           position={item.position}
           company={item.company}
+          url={item.url}
           description={item.description}
           skills={item.skills}
         />

@@ -1,5 +1,4 @@
 .home-page {
-  width: 100vw;
   display: flex;
   flex-direction: row;
   color: $secondary-white;
@@ -28,6 +27,13 @@
       }
       div {
         width: 100%;
+      }
+    }
+    .tab {
+      .tab-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
   }

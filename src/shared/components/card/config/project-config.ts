@@ -1,9 +1,11 @@
+import { url } from "inspector";
 import checklistIcon from "../../../../assets/icons/checklist.png";
 import recipeIcon from "../../../../assets/icons/recipe.png";
 
 export const projectItems = [
   {
     name: "Todo Application API",
+    url: "https://github.com/azreenzakaria/to-do-list",
     descrition:
       "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups",
     icon: checklistIcon,
@@ -11,11 +13,10 @@ export const projectItems = [
   },
   {
     name: "Recipe Application API",
+    url: "https://github.com/azreenzakaria/recipe-system-backend",
     descrition:
       "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups",
     icon: recipeIcon,
     stack: ["Node", "Rest API"],
   },
 ];
-
-// "This Recipe Application (API) project, developed with TypeScript, NestJS, and MongoDB, showcases the fundamental principles of CRUD operations and demonstrates the implementation of a one-to-many relationship..",

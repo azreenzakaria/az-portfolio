@@ -1,12 +1,19 @@
 import IconCard from "../shared/components/card/icon-card";
 import Tab from "../shared/components/tab/tab";
 import UseDeviceDetection from "../shared/hooks/use-device-type";
+import Lottie from "lottie-react";
+import animationData from "../assets/animation/scroll-down.json";
 
 const HomePage = () => {
   const deviceType = UseDeviceDetection();
-  const desktop = deviceType === "Desktop";
-  console.log("desktop");
-
+  const showTab = deviceType === "Desktop";
+  const scrollDown =
+    deviceType === "Mobile" ? (
+      <Lottie
+        animationData={animationData}
+        style={{ width: "4rem", height: "4rem" }}
+      />
+    ) : null;
   return (
     <div className="home-page">
       <div className="box">
@@ -15,10 +22,11 @@ const HomePage = () => {
           <div className="name">I'm Azreen Zakaria</div>
           <div className="position">Full-Stack Web Developer</div>
           <IconCard></IconCard>
+          {scrollDown}
         </div>
       </div>
       <div className="box">
-        <Tab showTab={desktop} />
+        <Tab showTab={showTab} />
       </div>
     </div>
   );
