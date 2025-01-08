@@ -15,10 +15,10 @@ const Tab: FC<ITab> = ({ showTab }): JSX.Element => {
 
   if (!showTab) {
     return (
-      <div className="pale-bana">
-        <div className="exp-title">Experiences</div>
+      <div className="content">
+        <h3>Experiences</h3>
         <ExpCard />
-        <div className="project-title">Projects</div>
+        <h3>Projects</h3>
         <ProjectCard />
       </div>
     );

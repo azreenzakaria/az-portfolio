@@ -7,16 +7,16 @@ export const projectItems = [
     name: "Todo Application API",
     url: "https://github.com/azreenzakaria/to-do-list",
     descrition:
-      "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups",
+      "This To-Do List project, crafted with TypeScript, NestJS, GraphQL, and MySQL, highlights the essential principles of CRUD operations and demonstrates the implementation of a one-to-many relationship.",
     icon: checklistIcon,
-    stack: ["NestJs", "Graphql"],
+    stack: ["Typescript", "NestJs", "GraphQL"],
   },
   {
     name: "Recipe Application API",
     url: "https://github.com/azreenzakaria/recipe-system-backend",
     descrition:
-      "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups",
+      "This recipe system project, built with TypeScript, NestJS, and MongoDB, showcases the core principles of CRUD operations and effectively implements a one-to-many relationship.",
     icon: recipeIcon,
-    stack: ["Node", "Rest API"],
+    stack: ["Typescript", "NestJs", "MongoDb"],
   },
 ];

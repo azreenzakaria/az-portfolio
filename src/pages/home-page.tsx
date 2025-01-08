@@ -11,7 +11,12 @@ const HomePage = () => {
     deviceType === "Mobile" ? (
       <Lottie
         animationData={animationData}
-        style={{ width: "4rem", height: "4rem" }}
+        style={{
+          width: "4rem",
+          height: "4rem",
+          position: "absolute",
+          bottom: "1rem",
+        }}
       />
     ) : null;
   return (
