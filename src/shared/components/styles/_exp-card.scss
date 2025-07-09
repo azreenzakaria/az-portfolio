@@ -1,0 +1,54 @@
+.exp-card {
+  .container {
+    display: flex;
+    flex-direction: row;
+    font-weight: $font-weight-300;
+    .left {
+      text-align: center;
+      flex-basis: 20%;
+    }
+    .right {
+      flex: 1;
+      padding-left: 1rem;
+      .content:nth-child(1) {
+        font-weight: $font-weight-400;
+      }
+      .content:nth-child(2) {
+        font-size: $font-size-12;
+        margin-bottom: 0.5rem;
+      }
+      .content > a {
+        color: black;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// Responsive styles
+@media (max-width: 768px) {
+  .exp-card {
+    margin: 0;
+    font-size: $font-size-12;
+    .container {
+      .left {
+        text-align: left;
+      }
+      .right {
+        .content:nth-child(2) {
+          font-size: $font-size-10;
+        }
+        .content > a {
+          color: white;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

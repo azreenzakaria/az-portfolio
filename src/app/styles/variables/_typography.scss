@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
 // Table of Contents
 //
 //  1. Font Family
@@ -6,7 +8,7 @@
 //  4. Line Height
 
 // 1. Font Family
-$font-family: "Lato", sans-serif;
+$font-family: "Inter", sans-serif;
 
 // 2. Font Size
 $font-size-4: 0.25rem;
@@ -28,3 +30,14 @@ $font-size-42: 2.625rem;
 $font-size-48: 3rem;
 $font-size-56: 3.5rem;
 $font-size-64: 4rem;
+
+// 3. Font Weight
+$font-weight-100: 100; //Thin
+$font-weight-200: 200; //Extra Light
+$font-weight-300: 300; //Light
+$font-weight-400: 400; //Normal (default)
+$font-weight-500: 500; //Medium
+$font-weight-600: 600; //Semi Bold
+$font-weight-700: 700; //Bold
+$font-weight-800: 800; //Extra Bold
+$font-weight-900: 900; //Black
