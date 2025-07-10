@@ -7,12 +7,16 @@ const IconCard = () => {
       <a
         href="https://www.linkedin.com/in/azreen-zakaria/"
         className="social-container first-icon"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <LinkedInLogo></LinkedInLogo>
       </a>
       <a
         href="https://github.com/azreenzakaria"
         className="social-container second-icon"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <GitLogo></GitLogo>
       </a>

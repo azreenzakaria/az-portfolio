@@ -1,0 +1,14 @@
+.main {
+  color: $secondary-white;
+}
+
+// Responsive styles
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    overflow: auto;
+    .box:first-child {
+      height: 100vh;
+    }
+  }
+}

@@ -1,12 +1,12 @@
 import "./app/styles/main.scss";
-import HomePage from "./pages/home-page";
+import MainPage from "./pages/main-page";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<MainPage />} />
       </Routes>
     </Router>
   );
