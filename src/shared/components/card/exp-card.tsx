@@ -20,16 +20,19 @@ const CardProps = ({
 }: ExperienceItem) => {
   return (
     <div className="container">
-      <div className="left">{year}</div>
-      <div className="right">
-        <div className="content">{position}</div>
-        <div className="content">
+      <div className="left">
+        <div className="position">{position}</div>
+        <div className="company">
           <a href={url} target="_blank" rel="noopener noreferrer">
             {company}
           </a>
         </div>
-        <div className="content">{description}</div>
+        <div className="description">{description}</div>
         <Pill items={skills} />
+      </div>
+
+      <div className="right">
+        <div className="year">{year}</div>
       </div>
     </div>
   );

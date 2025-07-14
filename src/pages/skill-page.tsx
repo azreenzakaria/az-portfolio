@@ -1,3 +1,5 @@
+import SkillCard from "../shared/components/card/skill-card";
+
 const SkillPage = ({
   sectionRef,
 }: {
@@ -5,7 +7,10 @@ const SkillPage = ({
 }) => {
   return (
     <div ref={sectionRef} className="skill">
-      <div className="helloworld">Hello World</div>
+      <div className="content">
+        <div className="page-title">Skills</div>
+        <SkillCard />
+      </div>
     </div>
   );
 };

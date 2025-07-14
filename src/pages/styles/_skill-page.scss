@@ -1,4 +1,20 @@
 .skill {
   height: 100vh;
-  background-color: red;
+  background-color: $primary-black;
+
+  .content {
+    margin: 0 5rem;
+
+    .page-title {
+      padding-top: 10rem;
+      margin-bottom: 3rem;
+      font-size: $font-size-28;
+      font-weight: $font-weight-800;
+      text-transform: uppercase;
+    }
+    .skill-card {
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }

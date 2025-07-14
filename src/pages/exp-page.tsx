@@ -1,3 +1,5 @@
+import ExpCard from "../shared/components/card/exp-card";
+
 const ExperiencePage = ({
   sectionRef,
 }: {
@@ -5,7 +7,10 @@ const ExperiencePage = ({
 }) => {
   return (
     <div ref={sectionRef} className="experience">
-      <div className="helloworld">Hello World</div>
+      <div className="content">
+        <div className="page-title">Experiences</div>
+        <ExpCard />
+      </div>
     </div>
   );
 };
