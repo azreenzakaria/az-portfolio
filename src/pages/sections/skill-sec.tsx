@@ -1,6 +1,6 @@
-import SkillCard from "../shared/components/card/skill-card";
+import SkillCard from "../../shared/components/card/skill-card";
 
-const SkillPage = ({
+const SkillSection = ({
   sectionRef,
 }: {
   sectionRef: React.RefObject<HTMLDivElement>;
@@ -15,4 +15,4 @@ const SkillPage = ({
   );
 };
 
-export default SkillPage;
+export default SkillSection;

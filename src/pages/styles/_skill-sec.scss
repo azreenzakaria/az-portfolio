@@ -18,3 +18,17 @@
     }
   }
 }
+
+// Responsive styles
+@media (max-width: 768px) {
+  .skill {
+    .content {
+      margin: 0 1.5rem;
+
+      .page-title {
+      }
+      .skill-card {
+      }
+    }
+  }
+}

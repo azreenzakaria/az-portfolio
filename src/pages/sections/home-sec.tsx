@@ -1,22 +1,22 @@
 import Lottie from "lottie-react";
-import IconCard from "../shared/components/card/icon-card";
-import animationData from "../assets/animation/scroll-down.json";
-import Tab from "../shared/components/tab/tab";
+import IconCard from "../../shared/components/card/icon-card";
+import animationData from "../../assets/animation/scroll-down.json";
+import Tab from "../../shared/components/tab/tab";
 
-interface ProfileProps {
+interface HomeProps {
   isMobile: boolean;
   sectionRef: {
-    profile: React.RefObject<HTMLDivElement>;
+    home: React.RefObject<HTMLDivElement>;
     experience: React.RefObject<HTMLDivElement>;
     skill: React.RefObject<HTMLDivElement>;
   };
 }
 
-const ProfilePage = ({ sectionRef, isMobile }: ProfileProps) => {
+const HomeSection = ({ sectionRef, isMobile }: HomeProps) => {
   // Need to debug this, why it printing twice
   console.log(isMobile);
   return (
-    <div ref={sectionRef.profile} className="profile">
+    <div ref={sectionRef.home} className="home">
       <div className="content">
         <div className="greet">Hi!</div>
         <div className="name">I'm Azreen Zakaria</div>
@@ -38,4 +38,4 @@ const ProfilePage = ({ sectionRef, isMobile }: ProfileProps) => {
   );
 };
 
-export default ProfilePage;
+export default HomeSection;

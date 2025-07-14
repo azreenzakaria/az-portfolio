@@ -3,7 +3,7 @@ import { FC } from "react";
 interface ITab {
   isMobile: boolean;
   sectionRef: {
-    profile: React.RefObject<HTMLDivElement>;
+    home: React.RefObject<HTMLDivElement>;
     experience: React.RefObject<HTMLDivElement>;
     skill: React.RefObject<HTMLDivElement>;
   };

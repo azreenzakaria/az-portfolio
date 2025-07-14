@@ -1,6 +1,6 @@
-import ExpCard from "../shared/components/card/exp-card";
+import ExpCard from "../../shared/components/card/exp-card";
 
-const ExperiencePage = ({
+const ExprienceSection = ({
   sectionRef,
 }: {
   sectionRef: React.RefObject<HTMLDivElement>;
@@ -15,4 +15,4 @@ const ExperiencePage = ({
   );
 };
 
-export default ExperiencePage;
+export default ExprienceSection;
