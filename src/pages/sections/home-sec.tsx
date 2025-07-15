@@ -1,22 +1,14 @@
 import Lottie from "lottie-react";
 import IconCard from "../../shared/components/card/icon-card";
 import animationData from "../../assets/animation/scroll-down.json";
-import Tab from "../../shared/components/tab/tab";
 
 interface HomeProps {
-  isMobile: boolean;
-  sectionRef: {
-    home: React.RefObject<HTMLDivElement>;
-    experience: React.RefObject<HTMLDivElement>;
-    skill: React.RefObject<HTMLDivElement>;
-  };
+  sectionRef: React.RefObject<HTMLDivElement>;
 }
 
-const HomeSection = ({ sectionRef, isMobile }: HomeProps) => {
-  // Need to debug this, why it printing twice
-  console.log(isMobile);
+const HomeSection = ({ sectionRef }: HomeProps) => {
   return (
-    <div ref={sectionRef.home} className="home">
+    <div ref={sectionRef} className="home">
       <div className="content">
         <div className="greet">Hi!</div>
         <div className="name">I'm Azreen Zakaria</div>
@@ -33,7 +25,6 @@ const HomeSection = ({ sectionRef, isMobile }: HomeProps) => {
           }}
         />
       </div>
-      <Tab sectionRef={sectionRef} isMobile={isMobile} />
     </div>
   );
 };

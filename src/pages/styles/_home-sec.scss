@@ -3,9 +3,13 @@
   background-color: $primary-black;
   display: flex;
   align-items: center;
+
   .content {
-    width: 90%;
-    margin-left: 9.25rem;
+    margin-left: 10rem;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+
     .greet {
       font-size: $font-size-20;
       font-weight: $font-weight-500;
@@ -18,16 +22,18 @@
       font-size: $font-size-14;
       font-weight: $font-weight-300;
     }
-    div {
-      width: 100%;
-    }
   }
 }
 
 // Responsive styles
 @media (max-width: 768px) {
   .home {
+    justify-content: center;
+
     .content {
+      margin-left: 0;
+      align-items: center;
+
       .greet {
         font-size: $font-size-18;
       }

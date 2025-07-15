@@ -1,13 +1,13 @@
 .skill {
-  height: 100vh;
   background-color: $primary-black;
 
   .content {
-    margin: 0 5rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    margin: 0 10rem;
 
     .page-title {
-      padding-top: 10rem;
-      margin-bottom: 3rem;
+      margin-bottom: 8.75rem;
       font-size: $font-size-28;
       font-weight: $font-weight-800;
       text-transform: uppercase;
