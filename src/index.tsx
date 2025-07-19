@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import MainPage from "./pages/main-page";
+import "./app/styles/main.scss";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(
@@ -8,7 +10,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 

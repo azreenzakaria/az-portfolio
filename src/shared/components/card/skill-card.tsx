@@ -1,12 +1,12 @@
 import { ReactComponent as TypescriptIcon } from "../../../assets/icons/typescript.svg";
 import { ReactComponent as NodeJSIcon } from "../../../assets/icons/nodejs.svg";
 
-interface SkillItem {
-  name?: string;
+interface ISkill {
+  name: string;
   path?: JSX.Element;
 }
 
-const item: SkillItem[] = [
+const item: ISkill[] = [
   { name: "HTML", path: undefined },
   { name: "CSS", path: undefined },
   { name: "Javascript", path: undefined },
@@ -18,7 +18,7 @@ const item: SkillItem[] = [
   { name: "GraphQl", path: undefined },
 ];
 
-const CardProps = ({ name, path }: SkillItem) => {
+const CardProps = ({ name, path }: ISkill) => {
   return (
     <div className="skill-card-content">
       <div className="icon">{path}</div>

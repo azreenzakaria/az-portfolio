@@ -1,5 +1,5 @@
 import Pill from "../pill/pill";
-interface ExperienceItem {
+interface IExperience {
   year: string;
   position: string;
   company: string;
@@ -8,7 +8,7 @@ interface ExperienceItem {
   skills: string[];
 }
 
-const item: ExperienceItem[] = [
+const item: IExperience[] = [
   {
     year: "2022 - 2024",
     position: "Backend Developer",
@@ -36,7 +36,7 @@ const CardProps = ({
   url,
   description,
   skills,
-}: ExperienceItem) => {
+}: IExperience) => {
   return (
     <div className="container">
       <div className="left">
