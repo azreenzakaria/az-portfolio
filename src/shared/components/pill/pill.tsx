@@ -1,16 +1,16 @@
-interface IPillProps {
+interface IPill {
   item: string;
 }
 
-interface IPillItems {
+interface IPillProps {
   items: string[];
 }
 
-const Props = ({ item }: IPillProps) => {
+const Props = ({ item }: IPill) => {
   return <div className="primary-pill">{item}</div>;
 };
 
-const Pill = ({ items }: IPillItems) => {
+const Pill = ({ items }: IPillProps) => {
   return (
     <div className="pill-container">
       {items.map((item, index) => (

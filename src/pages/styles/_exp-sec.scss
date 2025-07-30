@@ -1,0 +1,32 @@
+.experience {
+  background-color: $primary-black;
+
+  .content {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    margin: 0 10rem;
+
+    .page-title {
+      margin-bottom: 2.5rem;
+      font-size: $font-size-28;
+      font-weight: $font-weight-800;
+      text-transform: uppercase;
+    }
+    .exp-card {
+    }
+  }
+}
+
+// Responsive styles
+@media (max-width: 768px) {
+  .experience {
+    .content {
+      margin: 0 1.5rem;
+
+      .page-title {
+      }
+      .exp-card {
+      }
+    }
+  }
+}

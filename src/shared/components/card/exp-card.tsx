@@ -1,7 +1,5 @@
 import Pill from "../pill/pill";
-import { experiencesItem } from "./config/exp-config";
-
-interface ExperienceItem {
+interface IExperience {
   year: string;
   position: string;
   company: string;
@@ -10,6 +8,27 @@ interface ExperienceItem {
   skills: string[];
 }
 
+const item: IExperience[] = [
+  {
+    year: "2022 - 2024",
+    position: "Backend Developer",
+    company: "Regov Technologies Sdn. Bhd",
+    url: "https://www.regovtech.com/",
+    description:
+      "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups",
+    skills: ["Typescript", "NodeJs", "Graphql"],
+  },
+  {
+    year: "2022 - 2022",
+    position: "Technical Analyst Intern",
+    company: "Setel Venture Sdn. Bhd",
+    url: "https://www.setel.com/",
+    description:
+      "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups",
+    skills: ["MongoDb", "Swagger"],
+  },
+];
+
 const CardProps = ({
   year,
   position,
@@ -17,19 +36,22 @@ const CardProps = ({
   url,
   description,
   skills,
-}: ExperienceItem) => {
+}: IExperience) => {
   return (
     <div className="container">
-      <div className="left">{year}</div>
-      <div className="right">
-        <div className="content">{position}</div>
-        <div className="content">
+      <div className="left">
+        <div className="position">{position}</div>
+        <div className="company">
           <a href={url} target="_blank" rel="noopener noreferrer">
             {company}
           </a>
         </div>
-        <div className="content">{description}</div>
+        <div className="description">{description}</div>
         <Pill items={skills} />
+      </div>
+
+      <div className="right">
+        <div className="year">{year}</div>
       </div>
     </div>
   );
@@ -38,7 +60,7 @@ const CardProps = ({
 const ExpCard = () => {
   return (
     <div className="exp-card">
-      {experiencesItem.map((item, index) => (
+      {item.map((item, index) => (
         <CardProps
           key={index}
           year={item.year}
